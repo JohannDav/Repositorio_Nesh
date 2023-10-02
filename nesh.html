@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Botón Mágico</title> 
+    <style> 
+        body { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+        } 
+ 
+        button { 
+            font-size: 24px; 
+            padding: 10px 20px; 
+            background-color: #007bff; 
+            color: #fff; 
+            border: none; 
+            cursor: pointer; 
+        } 
+ 
+        #message { 
+            display: none; 
+            font-size: 72px; 
+            animation: blink 1s infinite; 
+        } 
+ 
+        @keyframes blink { 
+            0% { 
+                opacity: 0; 
+            } 
+            50% { 
+                opacity: 1; 
+            } 
+            100% { 
+                opacity: 0; 
+            } 
+        } 
+    </style> 
+</head> 
+<body> 
+    <button id="magicButton">Touch Me</button> 
+    <div id="message">YA NOS CARGO LA VERGA NESH, TUUU PUEDEEEEES</div> 
+ 
+    <script> 
+        const magicButton = document.getElementById('magicButton'); 
+        const message = document.getElementById('message'); 
+ 
+        magicButton.addEventListener('click', () => { 
+            magicButton.style.display = 'none'; 
+            message.style.display = 'block'; 
+        }); 
+    </script> 
+</body> 
+</html>
